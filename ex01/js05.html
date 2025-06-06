@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo javascript</title>
+    <style>
+        body{
+            background-color: rgb(130, 217, 239);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    ola mundo
+    <h1>aprendendo javascript formato de numeros</h1>
+    <script> 
+    
+    //  alert(`o ${salario} do seu  ${valor.toFixed(2)}`)
+    let salario = Number(prompt('Qual é seu salário?'));
+    alert(salario.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }));
+
+    //  operadores do javascript       orden de precedencia 
+
+    // + mais                         () todo o valor que estiver dentro vai fazer ir primeiro 
+    // -  menus                       ** depois vem a pentencia que e volores al quadrado
+    // * multiplicaçao                * / % depois vem esses 3 que tem o mesmo valor de orden               
+    // / divisao                      + - e por ultimo vem estos valores 
+    // % divisao entera
+                        //   ejemplo 
+                        
+                        //   > let a = 5 + 3
+                        //     undefined
+                        //     > a
+                        //     8
+                        //     > let b = a % 5
+                        //     undefined
+                        //     > b
+                        //     3
+                        //     > let c = 5 * b ** 2
+                        //     undefined
+                        //     > c
+                        //     45
+                        //     > let d = 10 - a / 2
+                        //     undefined
+                        //     > d
+                        //     6
+                        //     > let e = 6 * 2 / d
+                        //     undefined
+                        //     > e
+                        //     2
+                        //     > let f = b % e + 4 / e 
+                        //     undefined
+                        //     > f
+                        //     3
+                        //     > 
+
+
+
+    
+</script>
+
+</body> 
+</html>
