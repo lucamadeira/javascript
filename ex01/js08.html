@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo javascript</title>
+    <style>
+        body{
+            background-color: rgb(185, 185, 185);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: rgb(122, 241, 122);
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 1px 2px 2px black;
+        
+        }
+        p{
+            color:rgb(122, 241, 122) ;
+            font-weight: 200;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <p>ola mundo 😄</p>
+        <h1>aprendendo javascript</h1>
+    </header>
+    <main>
+        <h2>faz a suma</h2>
+        <input type="number" name="suma1" id="suma1"> +
+        <input type="number" name="suma2" id="suma2">
+        <input type="button" value="enter" onclick="sumar()">
+        <div id="resultado">resultado</div>
+        
+    </main>
+<script>
+
+     function sumar() {
+    let suma1 = document.getElementById('suma1');
+    let suma2 = document.getElementById('suma2');
+    let resultado = document.getElementById('resultado');
+    let su1 = Number(suma1.value);
+    let su2 = Number(suma2.value);
+    let suma = su1 + su2;
+    resultado.innerHTML = `A soma entre ${su1} e ${su2} é igual a ${suma}`;
+}
+</script>
+<!-- ...existing code... -->
+       
+    </script>
+
+</body> 
