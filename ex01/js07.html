@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo javascript</title>
+    <style>
+       div#block{
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height:200px;
+       }
+    </style>
+
+</head>
+<body>
+    <header>
+        ola mundo
+        <h1>aprendendo javascript</h1>
+    </header>
+    <main>
+        <div id="block">block</div>
+    </main>
+
+
+
+
+
+    <script> 
+    
+    let div = document.getElementById('block');
+    div.addEventListener('click', click);
+    div.addEventListener('mouseenter', enter);
+    div.addEventListener('mouseout', out);
+
+    function enter() {
+        div.innerText = 'entra';
+        div.style.background = 'green';
+    }
+
+    function out() {
+        div.innerText = 'block';
+        div.style.background = 'blueviolet';
+    }
+
+    function click() {
+        div.innerText = 'clicou';
+        div.style.background = 'red';
+    }
+
+
+        
+    </script>
+
+</body> 
