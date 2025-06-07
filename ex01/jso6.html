@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo javascript</title>
+    <style>
+        body{
+            background-color: rgb(130, 217, 239);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 name="h1">aprendendo javascript DOM</h1>
+
+    </header>
+    <main>
+        <h2 id="ID"> aprende como uasr os elementos do <strong>DOM</strong></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+       <div class="item"> 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tenetur vitae nihil unde mollitia consectetur non id, in commodi cumque iure nisi distinctio. Cum quo earum veniam expedita animi debitis.</p>
+        <a href="#">link de teste </a>
+       </div>
+
+       <p class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptatibus itaque amet dolore omnis, excepturi ipsum perferendis vitae, accusantium voluptate suscipit a quia quod libero, tempora delectus nihil. Praesentium, repellendus?
+
+       </p>
+
+    </main>
+   
+
+   
+
+
+    <script> 
+    
+    //     alert('aprendendo javascript');
+    //    confirm('voce gosta de apreder programaçao')
+    //    prompt('qual e seu nome')
+
+   let p1 = window.document.getElementsByTagName('p')[0]
+//    alert(p1.innerHTML)
+    document.write(p1.innerText)
+
+    let h2 = document.getElementById('ID')
+     h2.style.background = 'green'
+     h2.innerText = 'carregando...'
+
+     let h1 = document.getElementsByName('h1')[0]
+     h1.style.background = 'gray'
+
+     let div = document.querySelector('div.item') 
+     div.style.background = 'red'
+     // questo elemento document.guerySelector('') e la forma piu difusa perche permete di selecionare qualche tag seguendo la tipologia de HTML
+     let lorem = document.getElementsByClassName('class')[0] 
+     lorem.style.background = 'black'
+// questos elementos se crian della stessa tipologia se deve mettere [0,1,2,3,4,ect..] para che la modifica vaga aplicada
+
+   
+
+
+
+
+
+    </script>
+
+</body> 
