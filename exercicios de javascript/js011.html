@@ -63,12 +63,13 @@
         
        
             if ( pais == 'brasil'){
-                console.log(' Sei Un Brasiliano');
                 res.innerText = 'Sei Un  Basiliano'
             }
-            else {
-                console.log('voce nao e brasileiro');
-                res.innerText = 'Non Sei brasiliano'
+            else if (pais == 'italia') { 
+                res.innerText = 'Non Sei Brasiliano'
+            }
+            else  {
+               res.innerText = 'sei Estrangero'
             }
         }
             
