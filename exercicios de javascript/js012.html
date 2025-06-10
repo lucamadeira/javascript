@@ -15,17 +15,67 @@
     <h1> estudos de bucle (  for() / while() / while , do ()  ) </h1>
     <div class="caja"></div>
     <script>
-       function inicio (){
+       
 
-        for (let i = 0; i < 5; i++){
+
+        // for (let i = 0; i <= 5; i++){
              
-            document.getElementsByClassName('caja')
+        //     if(
+        //         i === 3
+        //     )
+        //     break
+        //     // continue
+        //     console.log(i)
+        // }
 
-        }
-        
-        
 
-       }
+        // uso degli for( of ){} que se serve per il uso del array
+        // let citta = [ 'milano','torino','roma','venezia'
+        // ]
+        // for( var i of citta){
+        //     console.log(i)
+        // }
+
+        // um pouco diferente do for( of ) / for( in )
+
+        // let obj = { a:1,b:2,c:3,d:4,e:5
+
+        // }
+
+        // for ( let cant in obj){
+        //     console.log(cant); // mostas os objts
+        //     console.log(obj[cant]) // serve para conta os obj que tenemsos 
+        // }
+
+        // while solo se executa se es true  se el valor for false no se exutara o n++ tem que esta a fora  e ele serve para chiudere il loope
+
+        // let n = 2; 
+
+        // while( n < 4 ){
+        //     console.log('interazione de valores ');
+        //     n++
+
+        //     if( n >= 5)
+        //     console.log('interzione')
+        //     break
+        //    continue
+        //  }
+
+        // do {} while () do e true e o while e false e a resposta debe essere true caso contrari se repitira fino a que venga true 
+
+        let documento = null;
+
+        do  {
+            document = prompt('ingrese documento');
+        } while (isNaN(Number(document)));
+
+        alert(`document ingresado ${documento}`)
+
+
+
+
+
+       
 
 
     </script> 
