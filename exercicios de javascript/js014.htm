@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos de javascript</title>
+</head>
+<body>
+
+    <label for="nota">nota</label>
+    <input id="nota1" type="text" value="">
+
+    <button class="boton">envia</button>
+
+    <div id="div"></div>
+
+
+
+
+
+
+
+
+    <script>
+
+        let nombre
+     
+        document.querySelector(".boton").addEventListener("click", pepita)
+
+        document.querySelector("#nota1").addEventListener("keydown", teclado) // serve para dezer hola
+        function teclado(e){
+         (e.key === "Enter") && pepita();
+
+        }
+
+        function pepita(){
+        // let nota = document.querySelector('#nata1').value;
+        let nombre = document.querySelector("#nota1").value.trim();
+         document.querySelector("#div").innerHTML = nombre;
+         (nombre) && (document.querySelector("#div").innerHTML =( `Hola  ${nombre}`))
+         document.querySelector("#nota1").value = "";
+         
+
+        }
+        
+        function limpa(){
+            const elemento = document.querySelector("#div")
+            elemento.value="";
+            elemento.focus();
+        }
+       
+    </script>
+</body>
+</html>
