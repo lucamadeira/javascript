@@ -23,22 +23,32 @@
 
     <script>
     document.querySelector(".boton").addEventListener("click",pepita)
-    
+        
+          document.querySelector("#nota1").addEventListener("keydown", teclado)
+
+         function teclado(e){
+           if  (e.key === "Enter") pepita()
+          }
+
     
         function pepita(){
             
-            let button = document.querySelector(".boton")
-            button.style.background = 'red'
+           let button
+           
+           button = document.querySelector(".boton")
+           button.style.background = 'red'
 
-            setTimeout(() => {
-            button.innerHTML = "volta"
-            button.style.background = 'white'
-            },1000)
+           setTimeout( () => {
 
-            div.
+             button = document.querySelector(".boton")
+             button.style.background = 'black'
+           },1000)
 
+           let nota 
 
-
+           nota = document.querySelector("#nota1").value
+           
+           document.querySelector("#div").innerText = nota
 
         }
     
