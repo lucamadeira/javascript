@@ -1,0 +1,39 @@
+{
+    "nome": "701",
+    "numeroAluni": 31,
+    "scuolaSabado": false,
+    "scuola": "militare justiliano ",
+    "insegnante":[
+        {
+            "nome": "anna",
+            "cognome": "rossi",
+            "materie":["giografia","inglese","religione"]
+        },
+        {
+            "nome": "maria",
+            "cognome": "verdi",
+            "materie":["matematica","informatica","politica"]
+        },
+        {
+            "nome": "julia",
+            "cognome": "giovanni",
+            "materie":["disegno","inglese","finanza"]
+        }
+    ],
+    "aluni": [
+        {
+            "nome": "julia",
+            "cognome": "giovanni"
+        },
+        {
+            "nome": "julia",
+            "cognome": "giovanni"
+        },
+        {
+            "nome": "julia",
+            "cognome": "giovanni"
+        }
+    ]
+}
+
+ 
