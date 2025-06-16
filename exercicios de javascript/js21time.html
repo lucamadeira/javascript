@@ -4,29 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>estudos de javascript</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(rgb(254, 183, 96), rgb(255, 140, 0));
+            font-family: 'Noto Sans';
+            height: 100vh;
+            
+        }
+        section#container{
+         
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            width: 100vw;
+
+        }
+        div{
+            line-height: 200px; 
+            text-align: center;
+            border: 1px solid transparent; 
+            background-color: transparent;
+            box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+           
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>estudos de timeout e time</h1>
-    <button > envia</button>
-    <div id="time"></div>
+    
+   <section id="container">
+       <div >
+        <span id="horas">00</span>
+        <span class="tempo"> horas </span>
+    </div>
+    <div >
+        <span id="minutos">00</span>
+        <span class="tempo"> minutos </span>
+    </div>
+    <div >
+        <span id="segundos">00</span>
+        <span class="tempo"> segundos </span>
+    </section>
+       
+          
+
+
+    
     <script>
-        let prova = setTimeout(saluda,2000)
-        function saluda (){
-        //  alert("prova di timeout")
-        addEventListener
-        }
-
-
-        function displayTime(){
-            let date = new Date();
-            let time = date.toLocaleTimeString();
-             document.getElementById('time').innerText = time
-        }
-         displayTime();
-
-        // Actualizar la hora cada segundo
-        setInterval(displayTime, 1000);
-
+       const horas = document.getElementById('horas')
+       const minutos = document.getElementById('minutos')
+       const segundos = document.getElementById('segundos')
     
     </script>
 </body>
