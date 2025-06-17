@@ -25,7 +25,7 @@
         </div>
 
          <div class="mobile-menu-icon">
-        <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e3e3e3"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+        <button onclick="menuShow()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e3e3e3"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
          </div>
     </header>
         
@@ -41,13 +41,31 @@
             </div>
 
         </nav>
-        div#
+        <div id="mobileMenu">
+             <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">projeto</a></li>
+                <li><a href="#">sobre</a></li>
+            </ul>
+             <div class="menu-bar">
+                <button>menu</button>
+              </div>
+        </div>
         
 
     
    
     <script>
-         function 
+         function menuShow(){
+            document.querySelector(menuShow)
+            let menuMobile = document.getElementById("mobile-menu");
+            if (menuMobile.classList.contains('open')){
+                menuMobile.classList.remove('open');
+            } else {
+                menuMobile.classList.add('open');
+            }
+            
+         }
  
     </script>
 </body>

@@ -40,6 +40,9 @@
         nav.mobile-spanzivel{
             display: none;
         }
+       #mobileMenu{
+        display: none;
+       }
 
 
         @media(max-width:770px) {
@@ -62,12 +65,20 @@
             height: 50px;
             margin-left: 40%;
             
-            
-    
         }
         nav{
             display: none;
         }
-        
+        #mobileMenu{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 100vw;
+        }
+        .open {
+            display: block !important;
+        }
+
        }
+       
         }
