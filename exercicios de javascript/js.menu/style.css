@@ -44,7 +44,6 @@
         display: none;
        }
 
-
         @media(max-width:770px) {
        .menu-bar{
         display: none;
@@ -57,31 +56,38 @@
        .mobile-spanzivel{
         display: block;
        }
+       
+       }
+
        @media(max-width:481px){
        
+       .dropdown{
+        display: flex;
+        flex-flow: row;
+        justify-content: end;
+       }
         .mobile-menu-icon{
-            display: flex;
-            width: 50px;
-            height: 50px;
-            margin-left: 40%;
-            
+          width: 50px;
+          height: 50px;
         }
         nav{
             display: none;
         }
-        #mobileMenu{
+        .dropdown{
             display: flex;
             flex-flow: column;
-            align-items: center;
-            width: 100vw;
-        }
-        #mobileMenu ul{
-            flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+            justify-content: end;
+            color: aliceblue;
 
         }
+
+      
+        
+        }
+       
+
+    
+
+
+
+
