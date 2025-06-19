@@ -32,23 +32,29 @@
     
     let div = document.getElementById('block');
     div.addEventListener('click', click);
-    div.addEventListener('mouseenter', enter);
-    div.addEventListener('mouseout', out);
+    div.addEventListener('mouseenter', cambieFundoAverde);
+    div.addEventListener('mouseout', cambieFundoAblueviolet;
 
-    function enter() {
+    function cambieFundoAverde() {
+        console.log("fue llama la function enter ")
         div.innerText = 'entra';
         div.style.background = 'green';
+    
     }
 
-    function out() {
+    function cambieFundoAblueviolet() {
+         console.log("fue la llamada la function out")
         div.innerText = 'block';
         div.style.background = 'blueviolet';
     }
 
-    function click() {
+    function cambieFundoArojo() {
+         console.log("fue llama la function click ")
         div.innerText = 'clicou';
         div.style.background = 'red';
     }
+
+
 
 
         
