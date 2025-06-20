@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="numero1" type="text" placeholder="digite um numero">
+    <input class="numero2" type="text" placeholder="digite um numero">
+    <button class="sumar">sumar</button>
+    <div class="conteudo"></div>
+    <script>
+       
+        document.querySelector('.sumar').addEventListener('click',()=>{
+         let inputNumero1 = parseFloat(document.querySelector('.numero1').value)
+        let inputNumero2 = parseFloat(document.querySelector('.numero2').value)
+         let resultado = sumar(inputNumero1,inputNumero2)
+         document.querySelector('.conteudo').innerHTML = 'resultado: ${resultado}'
+
+        })
+       
+        function sumar (a,b){
+            return (a + b);
+        }
+
+
+    </script>
+</body>
+</html>

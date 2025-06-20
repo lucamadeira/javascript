@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="inserir" type="text">
+    <button class="mostra">mostra</button>
+
+    <p class="conteudo"></p>
+
+    <script>
+        let input = document.querySelector('.inserir')
+        let button = document.querySelector('.mostra')
+        let palagrafo = document.querySelector('.conteudo')
+
+        function atualização(){
+            palagrafo.innerHTML = input.value
+        }
+        addEventListener('click',atualização)
+        
+
+     
+    </script>
+
+
+
+</body>
+</html>

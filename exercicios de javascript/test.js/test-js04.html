@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="edade" type="text" placeholder="digite sua edade">
+    <button id="button">verificar</button>
+    <p id="conteudo"></p>
+    <script>
+        const pessoaEdade = document.getElementById('edade')
+        const verificar= document.getElementById('button')
+        const resposta = document.getElementById('conteudo')
+
+        verificar.addEventListener('click',()=>{
+
+            if (pessoaEdade.value <= 17 ){
+            resposta.innerText = 'voce e menor de edade'
+            }
+            else {
+                resposta.innerText = 'voce e maoir de edade'
+            }
+
+        })
+
+    </script>
+</body>
+</html>
