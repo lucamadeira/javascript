@@ -34,40 +34,84 @@
           
         
         }
-        .boxlist{
-            display: flex;
-           justify-content: center;
-         
-         
+        #tarefa{
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+             border-radius: 10px;
+
         }
+        #envio{
+            width: 100px;
+             height: 40px;
+              border-radius: 10px;
+
+        }
+        label{
+            font-size: 32px;
+        }
+       
+       .concluida {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 20px;
+        }  
+        .listcontainer{
+            display: flex;
+            flex-flow: row;
+            justify-self: center;
+            text-align: center;
+            justify-content: center;
+            margin: 30px;
+            background-color: white;
+            border-radius: 10px;
+            width: 500px;
+            height: 300px;
+        }
+        ul{
+            font-size: 20px;
+        }
+        
     </style>
 </head>
 <body>
     <header><h1>lista to - do</h1></header>
     <main>
         <div class="lista">
-            <label for="tarefa"><strong>listas :</strong> </label>
+            <label for="tarefa"><strong>listas de tarefas:</strong> </label>
             <input id="tarefa" type="text" placeholder="digite sua tarefa">
             <button id="envio">envio</button>
            
         </div>
-        <div class="boxlist">
-             <label id="quadradolist" for="list">calcio</label>
-            <input type="checkbox" name="list" id="boxlist">
+        <div class="listcontainer">
+            <ul class="boxlist">
+            </ul>
         </div>
     </main>
     <script>
-        let listas = document.querySelector('.lista')
-        let tarefas = document.querySelector('#tarefa')
-        let button = document.querySelector('#boxlist')
-        let cleckLista = document.querySelector('boxlist')
-
-        button.addEventListener('click',()=>{
-            tarefas.value === cleckLista
-        })
-
+        let listasDEtarefas = document.querySelector('#tarefa')
+        let button = document.querySelector('#envio')
+        let boxDElist = document.querySelector('.boxlist')
     
+      button.addEventListener("click", () => {
+      const texto = listasDEtarefas.value.trim();
+      if (texto === "") {
+        alert("Digite uma tarefa!");
+        return;
+      }
 
+      const item = document.createElement("li");
+      item.innerText = texto;
+
+      // Marcar como concluída ao clicar
+      item.addEventListener("click", () => {
+        item.classList.toggle("concluida");
+      });
+
+      boxDElist.appendChild(item);
+      listasDEtarefas.value = ""; // limpar campo
+      listasDEtarefas.focus();
+    });
 
     </script>
 </body>
