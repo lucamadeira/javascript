@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> estudos de javascript</title>
-</head>
-<body>
-    <script>
-        function Persona (nome,cognome,eta,genero,interessi){
+function Persona (nome,cognome,eta,genero,interessi){
 
             this.nome = nome;
             this.cognome = cognome;
@@ -19,14 +10,12 @@
             `)};
 
         }
-         saluda = function(){
-       console.log("cioa sono" + this.nome)};
+         
+       
 
        const persona1 = new Persona (`luca`,`madeira valentini`,`22`,`maschio`,`programazione`);
        const persona2 = new Persona (`maria`, `rossi`,`24`,`feminile`,`moda`);
 
-       persona1.saluda() 
-        // console.log(persona2)
-    </script>
-</body>
-</html>
+    console.log(`ciao sono  ${persona1.nome}`)
+      
+    //  console.log(persona2)
